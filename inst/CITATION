@@ -1,0 +1,25 @@
+citHeader("To cite psAve in publications, please cite both the methods paper and the package:")
+
+bibentry(
+  bibtype  = "Article",
+  title    = "Prognostic score-based model averaging approach for propensity score estimation",
+  author   = c(person("Daijiro", "Kabata"),
+               person(c("Elizabeth", "A."), "Stuart"),
+               person("Ayumi", "Shintani")),
+  journal  = "BMC Medical Research Methodology",
+  year     = "2024",
+  volume   = "24",
+  pages    = "228",
+  doi      = "10.1186/s12874-024-02350-y",
+  header   = "The methods paper:"
+)
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "psAve: Model-Averaged Propensity Scores Selected by Prognostic-Score Balance",
+  author   = person("Daijiro", "Kabata"),
+  year     = format(Sys.Date(), "%Y"),
+  note     = sprintf("R package version %s", meta$Version),
+  url      = "https://github.com/kabajiro/psAve",
+  header   = "The package:"
+)

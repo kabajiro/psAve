@@ -1,0 +1,9 @@
+url: https://kabajiro.github.io/psAve/
+template:
+  bootstrap: 5
+home:
+  title: "psAve: Model-Averaged Propensity Scores Selected by Prognostic-Score Balance"
+navbar:
+  structure:
+    left: [intro, reference, articles, news]
+    right: [search, github]
