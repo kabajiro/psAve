@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">psAve</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +39,10 @@
     </div>
 
     <div class="section level2">
+<h2 class="pkg-version" data-toc-text="1.0.1" id="psave-101">psAve 1.0.1<a class="anchor" aria-label="anchor" href="#psave-101"></a></h2>
+<ul><li>Learner engines now run single-threaded by default (<code>ranger</code> <code>num.threads = 1</code>, <code>xgboost</code> <code>nthread = 1</code>), in line with CRAN’s at-most-2-cores policy; raise via <code>control</code> for real analyses (fixes the CRAN incoming pre-test NOTE “Re-building vignettes had CPU time 7.7 times elapsed time”). Selection results are unchanged.</li>
+</ul></div>
+    <div class="section level2">
 <h2 class="pkg-version" data-toc-text="1.0.0" id="psave-100">psAve 1.0.0<a class="anchor" aria-label="anchor" href="#psave-100"></a></h2>
 <p>Initial release, implementing Kabata, Stuart &amp; Shintani (2024), <em>BMC Medical Research Methodology</em> 24:228, <a href="doi:10.1186/s12874-024-02350-y" class="uri">doi:10.1186/s12874-024-02350-y</a>.</p>
 <ul><li>
@@ -55,7 +59,8 @@
 <li>Documented fixes relative to the paper’s reference code: integer-arithmetic simplex grid (the reference’s floating-point <code>rowSums == 1</code> filter silently dropped ~10.6% of grid points); proper weighted-eCDF KS statistic; <code><a href="https://rdrr.io/r/stats/family.html" class="external-link">binomial()</a></code> family for binary responses; no train/test-inconsistent <code><a href="https://rdrr.io/r/base/scale.html" class="external-link">scale()</a></code>; strict complete-case handling (<code>NA</code>s error, never dropped). See <code><a href="../articles/method-details.html">vignette("method-details", package = "psAve")</a></code>.</li>
 <li>Three vignettes: Getting Started (matching workflow), Reproducing the published IPW workflow (ATT/ATE weighting with <code><a href="https://rdrr.io/pkg/survey/man/svyglm.html" class="external-link">survey::svyglm()</a></code>), and Method details.</li>
 </ul></div>
-  </main></div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside></div>
 
 
     <footer><div class="pkgdown-footer-left">

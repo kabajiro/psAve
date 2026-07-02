@@ -23,7 +23,7 @@ WeightIt::weightit() as ps, with balance assessment via cobalt.'></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">psAve</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.0.1</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -240,7 +240,10 @@ Entries for <code>"glm"</code> are passed to <code><a href="https://rdrr.io/r/st
 <code><a href="https://rdrr.io/pkg/rpart/man/rpart.control.html" class="external-link">rpart::rpart.control()</a></code>, for <code>"ranger"</code> to <code><a href="http://imbs-hl.github.io/ranger/reference/ranger.html" class="external-link">ranger::ranger()</a></code>, and for
 <code>"xgboost"</code> to the <code>params</code> list of <code><a href="https://rdrr.io/pkg/xgboost/man/xgb.train.html" class="external-link">xgboost::xgb.train()</a></code> (with
 <code>nrounds</code> and <code>verbose</code> recognized as top-level arguments). The resolved
-values are stored in <code>info$learners</code>.</p></dd>
+values are stored in <code>info$learners</code>. Multi-threaded engines run
+single-threaded by default (<code>ranger</code> <code>num.threads = 1</code>, <code>xgboost</code>
+<code>nthread = 1</code>) in line with CRAN's at-most-2-cores policy; raise these
+via <code>control</code> to speed up real analyses on your own machine.</p></dd>
 
 
 <dt id="arg-keep-fits">keep.fits<a class="anchor" aria-label="anchor" href="#arg-keep-fits"></a></dt>

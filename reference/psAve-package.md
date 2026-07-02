@@ -62,6 +62,8 @@ in Medical Research*, 28(1), 84-101.
 
 Useful links:
 
+- <https://kabajiro.github.io/psAve/>
+
 - <https://github.com/kabajiro/psAve>
 
 - Report bugs at <https://github.com/kabajiro/psAve/issues>

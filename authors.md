@@ -25,13 +25,13 @@ Research Methodology*, **24**, 228.
     }
 
 Kabata D (2026). *psAve: Model-Averaged Propensity Scores Selected by
-Prognostic-Score Balance*. R package version 1.0.0,
+Prognostic-Score Balance*. R package version 1.0.1,
 <https://github.com/kabajiro/psAve>.
 
     @Manual{,
       title = {psAve: Model-Averaged Propensity Scores Selected by Prognostic-Score Balance},
       author = {Daijiro Kabata},
       year = {2026},
-      note = {R package version 1.0.0},
+      note = {R package version 1.0.1},
       url = {https://github.com/kabajiro/psAve},
     }

@@ -195,7 +195,10 @@ psave(
   and for `"xgboost"` to the `params` list of
   [`xgboost::xgb.train()`](https://rdrr.io/pkg/xgboost/man/xgb.train.html)
   (with `nrounds` and `verbose` recognized as top-level arguments). The
-  resolved values are stored in `info$learners`.
+  resolved values are stored in `info$learners`. Multi-threaded engines
+  run single-threaded by default (`ranger` `num.threads = 1`, `xgboost`
+  `nthread = 1`) in line with CRAN's at-most-2-cores policy; raise these
+  via `control` to speed up real analyses on your own machine.
 
 - keep.fits:
 
