@@ -99,7 +99,10 @@
 #'   [rpart::rpart.control()], for `"ranger"` to [ranger::ranger()], and for
 #'   `"xgboost"` to the `params` list of [xgboost::xgb.train()] (with
 #'   `nrounds` and `verbose` recognized as top-level arguments). The resolved
-#'   values are stored in `info$learners`.
+#'   values are stored in `info$learners`. Multi-threaded engines run
+#'   single-threaded by default (`ranger` `num.threads = 1`, `xgboost`
+#'   `nthread = 1`) in line with CRAN's at-most-2-cores policy; raise these
+#'   via `control` to speed up real analyses on your own machine.
 #' @param keep.fits If `TRUE`, the fitted learner objects are retained in
 #'   `fits`, enabling [predict.psave()]. Default `FALSE`.
 #' @param keep.path If `TRUE` (default), the full \eqn{\lambda} criterion path

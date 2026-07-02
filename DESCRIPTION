@@ -1,7 +1,7 @@
 Package: psAve
 Type: Package
 Title: Model-Averaged Propensity Scores Selected by Prognostic-Score Balance
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: person("Daijiro", "Kabata", email = "daijiro.kabata@port.kobe-u.ac.jp",
     role = c("aut", "cre", "cph"))
 Description: Constructs a model-averaged propensity score as a convex combination of

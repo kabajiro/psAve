@@ -1,3 +1,11 @@
+# psAve 1.0.1
+
+* Learner engines now run single-threaded by default (`ranger`
+  `num.threads = 1`, `xgboost` `nthread = 1`), in line with CRAN's
+  at-most-2-cores policy; raise via `control` for real analyses
+  (fixes the CRAN incoming pre-test NOTE "Re-building vignettes had
+  CPU time 7.7 times elapsed time"). Selection results are unchanged.
+
 # psAve 1.0.0
 
 Initial release, implementing Kabata, Stuart & Shintani (2024), *BMC Medical Research Methodology* 24:228, doi:10.1186/s12874-024-02350-y.

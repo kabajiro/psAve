@@ -109,7 +109,10 @@
   args <- list(num.trees = 500,
                mtry = max(1L, floor(sqrt(ncol(Xdf)))),
                min.node.size = if (binary) 1 else 5,
-               probability = binary)
+               probability = binary,
+               # single-threaded by default (CRAN policy: at most 2 cores);
+               # raise via control = list(ranger = list(num.threads = ...))
+               num.threads = 1L)
   if (length(control)) args <- utils::modifyList(args, control)
   yfit <- if (binary) factor(y, levels = c(0, 1)) else y
   fit <- do.call(ranger::ranger,
@@ -140,7 +143,10 @@
   .require_pkg("xgboost", sprintf("for the \"%s\" learner", label))
   binary <- task == "ps" || identical(family$family, "binomial")
   params <- list(objective = if (binary) "binary:logistic" else "reg:squarederror",
-                 max_depth = 4, eta = 0.1, min_child_weight = 10)
+                 max_depth = 4, eta = 0.1, min_child_weight = 10,
+                 # single-threaded by default (CRAN policy: at most 2 cores);
+                 # raise via control = list(xgboost = list(nthread = ...))
+                 nthread = 1L)
   nrounds <- 1000
   vrb <- 0
   if (length(control)) {

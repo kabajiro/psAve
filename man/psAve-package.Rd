@@ -46,6 +46,7 @@ Medical Research}, 28(1), 84-101. \doi{10.1177/0962280217715487}
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://kabajiro.github.io/psAve/}
   \item \url{https://github.com/kabajiro/psAve}
   \item Report bugs at \url{https://github.com/kabajiro/psAve/issues}
 }

@@ -134,7 +134,10 @@ Entries for \code{"glm"} are passed to \code{\link[stats:glm]{stats::glm()}}, fo
 \code{\link[rpart:rpart.control]{rpart::rpart.control()}}, for \code{"ranger"} to \code{\link[ranger:ranger]{ranger::ranger()}}, and for
 \code{"xgboost"} to the \code{params} list of \code{\link[xgboost:xgb.train]{xgboost::xgb.train()}} (with
 \code{nrounds} and \code{verbose} recognized as top-level arguments). The resolved
-values are stored in \code{info$learners}.}
+values are stored in \code{info$learners}. Multi-threaded engines run
+single-threaded by default (\code{ranger} \code{num.threads = 1}, \code{xgboost}
+\code{nthread = 1}) in line with CRAN's at-most-2-cores policy; raise these
+via \code{control} to speed up real analyses on your own machine.}
 
 \item{keep.fits}{If \code{TRUE}, the fitted learner objects are retained in
 \code{fits}, enabling \code{\link[=predict.psave]{predict.psave()}}. Default \code{FALSE}.}

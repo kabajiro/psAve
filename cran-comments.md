@@ -1,4 +1,14 @@
-# CRAN comments for psAve 1.0.0
+# CRAN comments for psAve 1.0.1
+
+## Resubmission
+
+This is a resubmission. The CRAN incoming pre-test (Debian) noted
+"Re-building vignettes had CPU time 7.7 times elapsed time". Cause: the
+'ranger' and 'xgboost' learners default to using all available cores.
+Fixed: both engines now run single-threaded by default inside psAve
+(num.threads = 1 / nthread = 1, user-adjustable via the `control`
+argument); vignette CPU time is now ~1x elapsed time. Selection results
+are unchanged.
 
 ## Test environments
 
