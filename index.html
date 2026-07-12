@@ -57,8 +57,7 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="psave">psAve<a class="anchor" aria-label="anchor" href="#psave"></a>
 </h1></div>
-<!-- badges: start -->
-
+<p><a href="https://CRAN.R-project.org/package=psAve" class="external-link"><img src="https://www.r-pkg.org/badges/version/psAve" alt="CRAN status"></a> <a href="https://CRAN.R-project.org/package=psAve" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/psAve" alt="CRAN downloads"></a> <a href="https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></p>
 <p><strong>Model-averaged propensity scores selected by prognostic-score balance.</strong></p>
 <p><code>psAve</code> implements the propensity score model averaging method of Kabata, Stuart &amp; Shintani (2024, <em>BMC Medical Research Methodology</em>). Instead of committing to a single propensity score model, <code><a href="reference/psave.html">psave()</a></code> fits several candidate models (logistic regression, CART, random forest, gradient boosting, or any <code>SuperLearner</code> wrapper), and combines them as a convex mixture whose weights are chosen on a simplex grid to optimize balance on the <strong>prognostic score</strong> — the predicted outcome under the untreated condition, estimated from untreated units only (Hansen 2008). Because the prognostic score summarizes the covariates <em>as they relate to the outcome</em>, balancing it targets exactly the covariate directions that drive bias in the treatment effect; in the paper’s simulations this “Prog (Ave)” strategy achieved the lowest and most robust bias and RMSE across 16 scenarios. Covariate-balance (SMD, KS) and prediction-accuracy (log loss) criteria from the paper are also available.</p>
 <p><code>psAve</code> is a companion to the <a href="https://kosukeimai.github.io/MatchIt/" class="external-link">MatchIt</a>/<a href="https://ngreifer.github.io/WeightIt/" class="external-link">WeightIt</a>/<a href="https://ngreifer.github.io/cobalt/" class="external-link">cobalt</a> ecosystem, not a replacement for any part of it. The deliverable is a plain numeric vector of propensity scores, handed to <code><a href="https://kosukeimai.github.io/MatchIt/reference/matchit.html" class="external-link">MatchIt::matchit()</a></code> as a distance measure or to <code><a href="https://ngreifer.github.io/WeightIt/reference/weightit.html" class="external-link">WeightIt::weightit()</a></code> as a propensity score (thin <code><a href="reference/psave_match.html">psave_match()</a></code> / <code><a href="reference/psave_weight.html">psave_weight()</a></code> wrappers do this without retyping the formula); balance assessment — including prognostic-score balance — works out of the box via <code><a href="https://ngreifer.github.io/cobalt/reference/bal.tab.html" class="external-link">cobalt::bal.tab()</a></code>; effect estimation stays where it belongs, in <code>MatchIt</code>/<code>WeightIt</code>/<code>survey</code>/<code>marginaleffects</code>. Estimands: ATT (default) and ATE.</p>
@@ -154,13 +153,7 @@
 </ul>
 </div>
 
-<div class="dev-status">
-<h2 data-toc-skip>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://CRAN.R-project.org/package=psAve" class="external-link"><img src="https://www.r-pkg.org/badges/version/psAve" alt="CRAN status"></a></li>
-</ul>
-</div>
+
 
   </aside>
 </div>
