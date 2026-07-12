@@ -2,6 +2,8 @@
 
 ## psAve 1.0.1
 
+CRAN release: 2026-07-10
+
 - Learner engines now run single-threaded by default (`ranger`
   `num.threads = 1`, `xgboost` `nthread = 1`), in line with CRAN’s
   at-most-2-cores policy; raise via `control` for real analyses (fixes

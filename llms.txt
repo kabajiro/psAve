@@ -41,6 +41,10 @@ effect estimation stays where it belongs, in
 
 ``` r
 
+# From CRAN
+install.packages("psAve")
+
+# Development version
 # install.packages("remotes")
 remotes::install_github("kabajiro/psAve")
 ```
