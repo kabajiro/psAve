@@ -7,7 +7,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/kabajiro/psAve/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/kabajiro/psAve/blob/v1.0.1/inst/CITATION)
 
 Kabata D, Stuart EA, Shintani A (2024). “Prognostic score-based model
 averaging approach for propensity score estimation.” *BMC Medical
