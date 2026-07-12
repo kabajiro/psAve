@@ -1,9 +1,8 @@
 # psAve
 
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/psAve)](https://CRAN.R-project.org/package=psAve)
-<!-- badges: end -->
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/psAve)](https://CRAN.R-project.org/package=psAve)
+[![R-CMD-check](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml)
 
 **Model-averaged propensity scores selected by prognostic-score balance.**
 
