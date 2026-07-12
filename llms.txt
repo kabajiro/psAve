@@ -66,18 +66,20 @@ cobalt::bal.tab(m, distance = data.frame(prog = fit$prog))
 ## Learn more
 
 - [Getting Started with
-  psAve](https://kabajiro.github.io/psAve/vignettes/psAve.Rmd) —
+  psAve](https://kabajiro.github.io/psAve/articles/psAve.html) —
   motivation, the `lalonde` matching workflow, interpreting output, and
   why using the outcome in the design stage does not bias the analysis.
 - [Reproducing the published IPW
-  workflow](https://kabajiro.github.io/psAve/vignettes/weighting.Rmd) —
+  workflow](https://kabajiro.github.io/psAve/articles/weighting.html) —
   ATT and ATE weighting, and the paper’s
   [`survey::svyglm()`](https://rdrr.io/pkg/survey/man/svyglm.html)
   estimator.
 - [Method details and design
-  decisions](https://kabajiro.github.io/psAve/vignettes/method-details.Rmd)
+  decisions](https://kabajiro.github.io/psAve/articles/method-details.html)
   — all formulas, the documented fixes relative to the paper’s reference
   code, relation to other software, and limitations.
+- Full documentation: <https://kabajiro.github.io/psAve/> ・ CRAN:
+  <https://CRAN.R-project.org/package=psAve>
 
 ## Citation
 
