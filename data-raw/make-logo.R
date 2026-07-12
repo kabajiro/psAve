@@ -24,7 +24,6 @@ dir.create("man/figures", recursive = TRUE, showWarnings = FALSE)
 
 border_color <- "#F2EAD8"   # 生成り（イラストの糸色に合わせる）
 text_color <- "#F2EAD8"
-url_color <- "#DDE5DA"
 
 # ------------------------------------------------------------------
 # 1. 素材画像から編み紐を中心に正方形を切り出す
@@ -65,9 +64,6 @@ sticker(
   p_color = text_color, p_family = "Aller_Rg", p_fontface = "bold",
   s_x = 1.00, s_y = 1.00, s_width = 1.20, s_height = 1.20,
   h_fill = "#31402F", h_color = NA,
-  url = "kabajiro.github.io/psAve",
-  u_x = 0.52, u_y = 0.40, u_size = 4.2,
-  u_color = url_color, u_family = "Aller_Rg", u_angle = -30,
   white_around_sticker = FALSE,
   filename = tmp, dpi = 300
 )
