@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kabajiro/psAve/actions/workflows/R-CMD-check.yaml)
-<!-- [![CRAN status](https://www.r-pkg.org/badges/version/psAve)](https://CRAN.R-project.org/package=psAve) -->
+[![CRAN status](https://www.r-pkg.org/badges/version/psAve)](https://CRAN.R-project.org/package=psAve)
 <!-- badges: end -->
 
 **Model-averaged propensity scores selected by prognostic-score balance.**
@@ -14,6 +14,10 @@
 ## Installation
 
 ```r
+# From CRAN
+install.packages("psAve")
+
+# Development version
 # install.packages("remotes")
 remotes::install_github("kabajiro/psAve")
 ```
