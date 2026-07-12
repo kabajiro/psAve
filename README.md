@@ -1,4 +1,4 @@
-# psAve <img src="man/figures/logo.png" align="right" height="139" alt="psAve hex logo" />
+# psAve
 
 [![CRAN status](https://www.r-pkg.org/badges/version/psAve)](https://CRAN.R-project.org/package=psAve)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/psAve)](https://CRAN.R-project.org/package=psAve)
